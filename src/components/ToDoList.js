@@ -6,7 +6,7 @@ function ToDoList({ tasks }) {
     <View>
       <ScrollView>
         <Pressable>
-          <View>
+          <View style={styles.task}>
             <ul>
               {tasks.map((task, index) => (
                 <li key={index}>{task}</li>

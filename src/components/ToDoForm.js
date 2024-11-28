@@ -2,10 +2,7 @@ import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 import React from "react";
 import { useState } from "react";
 
-const ToDoForm = () => {
-  function ToDoForm({ addTask }) {
-    // ...
-  }
+function ToDoForm({ addTask }) {
   const [taskText, setTaskText] = React.useState("");
 
   return (
@@ -17,10 +14,9 @@ const ToDoForm = () => {
         value={taskText}
       />
       <Button title="Add Task" onPress={() => addTask(taskText)} />
-      <Text>Clear</Text>
     </View>
   );
-};
+}
 
 export default ToDoForm;
 
